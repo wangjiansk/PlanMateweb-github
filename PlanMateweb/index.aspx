@@ -25,7 +25,7 @@
                         <h4 class='title'>您身边更专业的计划专家</h4>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xm-12">
-                        <p id='loginTitle' runat="server" class="text-center">用户登陆啊啊啊</p>
+                        <p id='loginTitle' runat="server" class="text-center">用户登陆</p>
                          
                         <div class="form-group ml-md-2 ml-sm-2 ml-xl-2 mr-lg-2 mr-md-2 mr-sm-2 mr-xl-2">
                             <asp:TextBox ID="userName" runat="server" CssClass="form-control mb-2" placeholder ="用户名"></asp:TextBox>

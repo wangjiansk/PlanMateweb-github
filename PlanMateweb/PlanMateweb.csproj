@@ -74,6 +74,7 @@
     <Content Include="Css\font-awesome.css" />
     <Content Include="Css\login.css" />
     <Content Include="Css\selector.css" />
+    <Content Include="Css\useSet.css" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="Global.asax" />
     <Content Include="Image\favicon.ico" />
@@ -81,12 +82,14 @@
     <Content Include="Image\logo.png" />
     <Content Include="Image\timg.jpg" />
     <Content Include="index.aspx" />
+    <Content Include="js\bootstrap3.3.7.js" />
     <Content Include="js\bootstrap.js" />
     <Content Include="js\index.js" />
     <Content Include="js\jquery-3.3.1.min.js" />
     <Content Include="js\selector.js" />
     <Content Include="js\super.js" />
     <Content Include="js\tool.js" />
+    <Content Include="js\usingSet.js" />
     <Content Include="js\workView.js" />
     <Content Include="fonts\fontawesome-webfont.eot" />
     <Content Include="fonts\fontawesome-webfont.ttf" />
@@ -101,6 +104,7 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <Content Include="selector.aspx" />
+    <Content Include="userset.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -130,6 +134,13 @@
     </Compile>
     <Compile Include="selector.aspx.designer.cs">
       <DependentUpon>selector.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="userset.aspx.cs">
+      <DependentUpon>userset.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userset.aspx.designer.cs">
+      <DependentUpon>userset.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

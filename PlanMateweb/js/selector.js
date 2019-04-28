@@ -40,7 +40,7 @@ function divlink(linkname) {
         window.location.href = "/2.aspx";
     }
     else if (linkname == "systemsetting") {
-        window.location.href = "/3.aspx";
+        window.location.href = "/userset.aspx";
     }
     else if (linkname == "reportsystem") {
         window.location.href = "/4.aspx";

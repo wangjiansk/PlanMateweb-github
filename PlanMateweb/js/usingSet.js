@@ -1,51 +1,54 @@
 (function ($) {
     let useSeting = {
         init() {
-            //导航条
-            this.nav = $('#navContent').find('li');
-            //左边的导航条
-            this.child = $(".navList").find('ul');
-            //左边的导航条内容
-            this.childNav =this.child.find('li');
-            //网页内容
-            this.inputGroup = $('.inputGroup');
+            this.nav = $('#bs-example-navbar-collapse-1').find('li').find('a').not(".child-nav");
+            this.navList = $('.navList').find('ul');
+            this.navListNav =  this.navList.find('li').find('a');
             this.btn = $('.show');
-            this.bind();
+            this.con = $('.inputGroup');
+            this.childrenNav = $('.childrenNav').find('li').find('a');
+            this.caret = $('.caret');
+            this.bindEvent();
         },
-
-
-        bind() {
-            let self =this;
-            this.childNav.each(function (index, ele) {
-                $(ele).on('click', function () {
-
-                    $('.childActive').removeClass('childActive');
-                    $(this).find('a').addClass('childActive');
-                    $('.innerActive').removeClass('innerActive');
-                    self.inputGroup.eq(index).addClass('innerActive')
-                })
-
-            });
+        bindEvent(){
+            let self = this;
             this.nav.each(function (index,ele) {
                 $(ele).on('click',function () {
-                    if(  $('#bs-example-navbar-collapse-1').hasClass('isopen')){
+                    //小屏幕的时候
+                   if(self.caret.css('display')=='none'){
+                       $('.active').removeClass('active');
+                       $(this).addClass('active');
+                       self.navList.css({display: 'none'});
+                       self.navList.eq(index).css({display: 'block'})
+                   }
+                    // 大屏幕的时候
+                    else{
+                       $('.active').removeClass('active');
+                       $(this).addClass('active');
+                       $(this).parent().find('.childrenNav').toggleClass('showChildNav')
+                   }
 
-                    }
-                    $('.active').removeClass('active');
-                    $(this).find('a').addClass('active');
-                    self.child.eq(index).css({display:'none'});
-                    self.child.eq(index).css({display:'block'});
+                })
+            });
+            this.navListNav.each(function (index,ele) {
+                $(ele).on('click',function () {
+                    $('.childActive').removeClass('childActive');
+                    $(this).addClass('childActive');
+                    $('.innerActive').removeClass('innerActive');
+                    self.con.eq(index).addClass('innerActive');
+                })
+            });
+            this.childrenNav.each(function (index,ele) {
+                $(ele).on('click',function () {
+                    $('.childrenActive').removeClass('childrenActive');
+                    $(this).addClass('childrenActive');
+                    $('.innerActive').removeClass('innerActive');
+                    self.con.eq(index).addClass('innerActive');
                 })
             });
             this.btn.on('click',function () {
-                $(this).toggleClass("open");
-                if($(this).hasClass('open')){
-                    $(this).addClass('showActive');
-                    $('#bs-example-navbar-collapse-1').addClass('isopen');
-                }else{
-                    $(this).removeClass('showActive')
-                }
-            });
+                $(this).toggleClass('showActive');//判断按钮开启
+            })
         }
     };
     useSeting.init();

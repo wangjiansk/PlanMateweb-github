@@ -18,7 +18,7 @@
             let self =this;
             this.childNav.each(function (index, ele) {
                 $(ele).on('click', function () {
-                    if($(ele)){}
+
                     $('.childActive').removeClass('childActive');
                     $(this).find('a').addClass('childActive');
                     $('.innerActive').removeClass('innerActive');
@@ -28,6 +28,9 @@
             });
             this.nav.each(function (index,ele) {
                 $(ele).on('click',function () {
+                    if(  $('#bs-example-navbar-collapse-1').hasClass('isopen')){
+
+                    }
                     $('.active').removeClass('active');
                     $(this).find('a').addClass('active');
                     self.child.eq(index).css({display:'none'});
@@ -43,9 +46,6 @@
                     $(this).removeClass('showActive')
                 }
             });
-            // $('.isopen').find('ul').find('li').find('a').on('click',function () {
-            //
-            // })
         }
     };
     useSeting.init();

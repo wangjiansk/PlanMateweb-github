@@ -488,10 +488,13 @@ li {
         width: 100%;
         margin-left: 0;
     }
+    .isopen  #navContent li a .caret{
+        display: inline-block;
+    }
 }
 .caret{
     display: none;
 }
-.isopen  #navContent li a .caret{
-    display: inline-block;
-}
+/*.isopen  #navContent li a .caret{*/
+    /*display: none;*/
+/*}*/

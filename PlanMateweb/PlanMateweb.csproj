@@ -143,6 +143,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Nmae\" />
     <Folder Include="PmSet\" />
   </ItemGroup>
   <ItemGroup>

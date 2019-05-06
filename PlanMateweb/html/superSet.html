@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>管理员</title>
+    <link rel="stylesheet" href="../Css/bootstrap.css">
+    <link rel="stylesheet" href="../Css/superSet.css">
+
+
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #3a3a3a;">
+    <a class="navbar-brand" href="#"> <img src="../Image/logo-white.png" class="nav-img" height="50"/></a>
+    <button class="navbar-toggler" type="button" id="dropBtn" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+            style="outline: none;">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link dropD" href="#">用户设置 <span class="triangle_border_down"
+                                                              id="triangle_border_down"></span></a>
+                <ul class="dropdList">
+                    <li><a class="child-nav innerActive" href="#">用户管理</a></li>
+                    <li><a class="child-nav" href="#">用户组管理</a></li>
+                    <li><a class="child-nav" href="#">权限管理</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">看板设置</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">员工删除</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">日志</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">MES设置</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">数据中心设置</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="navList listActive">
+    <ul>
+        <li><a href="#" class="childActive">用户管理</a></li>
+        <li><a href="#">用户组管理</a></li>
+        <li><a href="#">用户权限管理</a></li>
+    </ul>
+</div>
+<div class="navList">
+    <ul>
+        <li><a href="#" class="childActive">看板设置</a></li>
+    </ul>
+</div>
+<div class="navList">
+    <ul>
+        <li><a href="#" class="childActive">员工删除</a></li>
+    </ul>
+</div>
+<div class="navList">
+    <ul>
+        <li><a href="#" class="childActive">日志</a></li>
+    </ul>
+</div>
+<div class="navList">
+    <ul>
+        <li><a href="#" class="childActive">MES设置</a></li>
+    </ul>
+</div>
+<div class="navList">
+    <ul>
+        <li><a href="#" class="childActive">数据中心设置</a></li>
+    </ul>
+</div>
+<div class="content">
+    <div class="conten">
+        <div class="card text-white bg-success   mb-3 myCard" style="max-width: 18rem;">
+            <h4 class="text-center card-header ">用户新建</h4>
+            <div class="card-body">
+                <label>名字</label>
+                <label>
+                    <input style="border: none;background-color: transparent;border-bottom: 1px solid #fff;outline: none;" type="text" >
+                </label>
+                <label>密码</label>
+                <label>
+                    <input style="border: none;background-color: transparent;border-bottom: 1px solid #fff;outline: none;" type="password">
+                </label>
+                <label>电话</label>
+                <label>
+                    <input style="border: none;background-color: transparent;border-bottom: 1px solid #fff;outline: none;" type="tel">
+                </label>
+            </div>
+            <div class="card-footer">
+                <button class="btn btn-success" style="margin: 0 auto;display: block;background-color: #17ff14;color: #fff;">确定新建</button>
+            </div>
+        </div>
+        <div class="card text-white bg-primary mb-3 myCard" style="max-width: 18rem;">
+            <h4 class="text-center card-header">用户修改</h4>
+            <div class="card-body">
+                <label>名字</label>
+                <label>
+                    <input style="border: none;background-color: transparent;border-bottom: 1px solid #fff;outline: none;" type="text">
+                </label>
+                <label>密码</label>
+                <label>
+                    <input style="border: none;background-color: transparent;border-bottom: 1px solid #fff;outline: none;" type="password">
+                </label>
+                <label>电话</label>
+                <label>
+                    <input style="border: none;background-color: transparent;border-bottom: 1px solid #fff;outline: none;" type="tel">
+                </label>
+            </div>
+            <div class="card-footer">
+                <button class="btn" style="margin: 0 auto;display: block;background-color: #0861ff;color: #fff;">确定修改</button>
+            </div>
+        </div>
+        <div class="card text-white bg-danger mb-3 myCard" style="max-width: 18rem;">
+            <h4 class="text-center card-header">用户删除</h4>
+            <div class="card-body">
+                <label>名字</label>
+                <label>
+                    <input style="border: none;background-color: transparent;border-bottom: 1px solid #fff;outline: none;" type="text">
+                </label>
+            </div>
+            <div class="card-footer">
+                <button class="btn" style="margin: 0 auto;display: block;background-color: #ff0505;color: #fff;">确定删除</button>
+            </div>
+        </div>
+    </div>
+    <div class="conten"  style="display: none;">
+        <div class="card text-white bg-success   mb-3 myCard" style="max-width: 18rem;">
+            <h4 class="text-center card-header">用户组新建</h4>
+            <div class="card-body">
+                <label>名字</label>
+                <label>
+                    <input style="border: none;background-color: transparent;border-bottom: 1px solid #fff;outline: none;" type="text">
+                </label>
+                <label>密码</label>
+                <label>
+                    <input style="border: none;background-color: transparent;border-bottom: 1px solid #fff;outline: none;" type="password" >
+                </label>
+                <label>电话</label>
+                <label>
+                    <input style="border: none;background-color: transparent;border-bottom: 1px solid #fff;outline: none;" type="tel">
+                </label>
+            </div>
+            <div class="card-footer">
+                <button class="btn btn-success" style="margin: 0 auto;display: block;background-color: #17ff14;color: #fff;">确定新建</button>
+            </div>
+        </div>
+        <div class="card text-white bg-primary mb-3 myCard" style="max-width: 18rem;">
+            <h4 class="text-center card-header">用户组修改</h4>
+            <div class="card-body">
+                <label>名字</label>
+                <label>
+                    <input style="border: none;background-color: transparent;border-bottom: 1px solid #fff;outline: none;" type="text">
+                </label>
+                <label>密码</label>
+                <label>
+                    <input style="border: none;background-color: transparent;border-bottom: 1px solid #fff;outline: none;" type="password" >
+                </label>
+                <label>电话</label>
+                <label>
+                    <input style="border: none;background-color: transparent;border-bottom: 1px solid #fff;outline: none;" type="tel">
+                </label>
+            </div>
+            <div class="card-footer">
+                <button class="btn" style="margin: 0 auto;display: block;background-color: #0861ff;color: #fff;">确定修改</button>
+            </div>
+        </div>
+        <div class="card text-white bg-danger mb-3 myCard" style="max-width: 18rem;">
+            <h4 class="text-center card-header">用户组删除</h4>
+            <div class="card-body">
+                <label>名字</label>
+                <label>
+                    <input style="border: none;background-color: transparent;border-bottom: 1px solid #fff;outline: none;" type="text">
+                </label>
+            </div>
+            <div class="card-footer">
+                <button class="btn" style="margin: 0 auto;display: block;background-color: #ff0505;color: #fff;">确定删除</button>
+            </div>
+        </div>
+    </div>
+    <div class="conten"  style="display: none;">
+        <div class="card text-white bg-primary mb-12 myCard" style="max-width: 18rem;">
+            <h4 class="text-center card-header">权限设置</h4>
+            <div class="card-body">
+                <label>名字</label>
+                <label>
+                    <input style="border: none;background-color: transparent;border-bottom: 1px solid #fff;outline: none;" type="text">
+                </label>
+                <label>密码</label>
+                <label>
+                    <input style="border: none;background-color: transparent;border-bottom: 1px solid #fff;outline: none;" type="password">
+                </label>
+                <label>电话</label>
+                <label>
+                    <input style="border: none;background-color: transparent;border-bottom: 1px solid #fff;outline: none;" type="tel">
+                </label>
+            </div>
+            <div class="card-footer">
+                <button class="btn btn-success" style="margin: 0 auto;display: block;background-color: #17ff14;color: #fff;">确定新建</button>
+            </div>
+        </div>
+    </div>
+    <div class="conten"></div>
+</div>
+<div class="content" style="display: none">
+    看板
+</div>
+<div class="content" style="display: none">
+    员工删除
+</div>
+<div class="content" style="display: none">
+    日志
+</div>
+<div class="content" style="display: none">
+    MES设置
+</div>
+<div class="content" style="display: none">
+    数据中心设置
+</div>
+<script src="../js/jquery-3.3.1.min.js"></script>
+<script src="../js/bootstrap.js"></script>
+<script src="../js/superSet.js"></script>
+</body>
+</html>

@@ -14,7 +14,6 @@
 
 </head>
 <body>
-
 <div class="wrapper">
     <nav class="navbar navbar-default mynav">
         <div class="container-fluid" style="height: 100%;">

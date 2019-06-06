@@ -71,18 +71,26 @@
   <ItemGroup>
     <Content Include="Css\bootstrap3.3.7.css" />
     <Content Include="Css\bootstrap.css" />
+    <Content Include="Css\dataTables.css" />
+    <Content Include="Css\orderConfirm.css" />
     <Content Include="Css\font-awesome.css" />
     <Content Include="Css\login.css" />
     <Content Include="Css\selector.css" />
     <Content Include="Css\useSet.css" />
-    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="font-awesome-4.7.0\css\font-awesome.css" />
+    <Content Include="font-awesome-4.7.0\css\font-awesome.min.css" />
+    <Content Include="font-awesome-4.7.0\fonts\fontawesome-webfont.svg" />
+    <Content Include="font-awesome-4.7.0\HELP-US-OUT.txt" />
+    <Content Include="js\jquery.slim.js" />
+    <Content Include="js\orderConfirm.js" />
+    <Content Include="js\popper.js" />
+    <Content Include="orderConfirm.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Image\favicon.ico" />
     <Content Include="Image\logo-white.png" />
     <Content Include="Image\logo.png" />
     <Content Include="Image\timg.jpg" />
     <Content Include="index.aspx" />
-    <Content Include="js\bootstrap3.3.7.js" />
     <Content Include="js\bootstrap.js" />
     <Content Include="js\index.js" />
     <Content Include="js\jquery-3.3.1.min.js" />
@@ -91,11 +99,40 @@
     <Content Include="js\tool.js" />
     <Content Include="js\usingSet.js" />
     <Content Include="js\workView.js" />
-    <Content Include="fonts\fontawesome-webfont.eot" />
-    <Content Include="fonts\fontawesome-webfont.ttf" />
-    <Content Include="fonts\fontawesome-webfont.woff" />
-    <Content Include="fonts\fontawesome-webfont.woff2" />
-    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="font-awesome-4.7.0\fonts\fontawesome-webfont.eot" />
+    <Content Include="font-awesome-4.7.0\fonts\fontawesome-webfont.ttf" />
+    <Content Include="font-awesome-4.7.0\fonts\fontawesome-webfont.woff" />
+    <Content Include="font-awesome-4.7.0\fonts\fontawesome-webfont.woff2" />
+    <Content Include="font-awesome-4.7.0\fonts\FontAwesome.otf" />
+    <Content Include="font-awesome-4.7.0\less\animated.less" />
+    <Content Include="font-awesome-4.7.0\less\bordered-pulled.less" />
+    <Content Include="font-awesome-4.7.0\less\core.less" />
+    <Content Include="font-awesome-4.7.0\less\fixed-width.less" />
+    <Content Include="font-awesome-4.7.0\less\font-awesome.less" />
+    <Content Include="font-awesome-4.7.0\less\icons.less" />
+    <Content Include="font-awesome-4.7.0\less\larger.less" />
+    <Content Include="font-awesome-4.7.0\less\list.less" />
+    <Content Include="font-awesome-4.7.0\less\mixins.less" />
+    <Content Include="font-awesome-4.7.0\less\path.less" />
+    <Content Include="font-awesome-4.7.0\less\rotated-flipped.less" />
+    <Content Include="font-awesome-4.7.0\less\screen-reader.less" />
+    <Content Include="font-awesome-4.7.0\less\stacked.less" />
+    <Content Include="font-awesome-4.7.0\less\variables.less" />
+    <Content Include="font-awesome-4.7.0\scss\font-awesome.scss" />
+    <Content Include="font-awesome-4.7.0\scss\_animated.scss" />
+    <Content Include="font-awesome-4.7.0\scss\_bordered-pulled.scss" />
+    <Content Include="font-awesome-4.7.0\scss\_core.scss" />
+    <Content Include="font-awesome-4.7.0\scss\_fixed-width.scss" />
+    <Content Include="font-awesome-4.7.0\scss\_icons.scss" />
+    <Content Include="font-awesome-4.7.0\scss\_larger.scss" />
+    <Content Include="font-awesome-4.7.0\scss\_list.scss" />
+    <Content Include="font-awesome-4.7.0\scss\_mixins.scss" />
+    <Content Include="font-awesome-4.7.0\scss\_path.scss" />
+    <Content Include="font-awesome-4.7.0\scss\_rotated-flipped.scss" />
+    <Content Include="font-awesome-4.7.0\scss\_screen-reader.scss" />
+    <Content Include="font-awesome-4.7.0\scss\_stacked.scss" />
+    <Content Include="font-awesome-4.7.0\scss\_variables.scss" />
+    <Content Include="js\jquery.dataTables.js" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml">
       <SubType>Designer</SubType>
     </None>
@@ -110,6 +147,13 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="orderConfirm.aspx.cs">
+      <DependentUpon>orderConfirm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="orderConfirm.aspx.designer.cs">
+      <DependentUpon>orderConfirm.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -154,7 +198,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="PmSet\" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />

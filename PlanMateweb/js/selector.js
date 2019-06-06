@@ -37,7 +37,7 @@ function divlink(linkname) {
         window.location.href = "/1.aspx";
     }
     else if (linkname == "datacenter") {
-        window.location.href = "/2.aspx";
+        window.location.href = "/datacenter.aspx";
     }
     else if (linkname == "systemsetting") {
         window.location.href = "/userset.aspx";

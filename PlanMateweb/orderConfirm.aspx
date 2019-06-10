@@ -8,10 +8,10 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>数据中心</title>
-    <link rel="stylesheet" href="Css/bootstrap.css">
-    <link rel="stylesheet" href="Css/dataTables.css">
-    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
-    <link rel="stylesheet" href="Css/orderConfirm.css">
+    <link href="Css/bootstrap.css" rel="stylesheet" />
+    <link href="Css/dataTables.css" rel="stylesheet" />
+    <link href="Css/font-awesome.css" rel="stylesheet" />
+    <link href="Css/orderConfirm.css" rel="stylesheet" />
 </head>
 <body>
 <div class="wrapper">
@@ -23,43 +23,66 @@
                 <span class="max-span"><i class="fa fa-bars" aria-hidden="true"></i></span>
             </p>
         </div>
-        <div class="user">
-            <div class="nav-item dropdown">
-                <a href="#" id="down" role="button"
-                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <i class="fa fa-user-circle-o" aria-hidden="true"></i>
-                </a>
-                <div class="dropdown-menu userMenu" aria-labelledby="down" x-placement="bottom-start">
-                    <a class="dropdown-item" href="#">用户设置</a>
-                    <a class="dropdown-item" href="#">登陆记录</a>
-                    <a class="dropdown-item" href="#">退出</a>
+            <div class="user">
+                <div class="nav-item">
+                    <a href="#" id="user">
+                        <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                    </a>
+                    <ul class="userSeting">
+                        <li><a class="seting-item" href="#">用户设置</a></li>
+                        <li><a class="seting-item" href="#">登陆记录</a></li>
+                        <li><a class="seting-item" href="#" data-toggle="modal" data-target="#myModal">退出</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <!-- 模态框头部 -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">确定要退出吗？</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- 模态框主体 -->
+                    <div class="modal-body">
+                        退出后要重新登陆
+                    </div>
+
+                    <!-- 模态框底部 -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">退出登陆</button>
+                    </div>
+
                 </div>
             </div>
-
         </div>
-    </div>
+        </div>
+
     <div class="container-fluid main">
         <div class="row con">
             <div class="Mynav">
                 <ul>
-                    <li><a href="#"><img src="../Image/logo-white.png" id="logo" /></a></li>
-                    <li class="active"><a href="#">
-                        <i class="fa fa-tachometer" aria-hidden="true"></i><span> 订单查询</span></a></li>
-                    <li>
+                    <li class="nav-link"><a href="#"><img src="../Image/logo-white.png" id="logo" /></a></li>
+                    <li class="nav-link active"><a href="#">
+                        <i class="fa fa-tachometer" aria-hidden="true"></i><span> 订单查询</span>
+                    </a></li>
+                    <li class="nav-link">
                         <a href="#">
                             <i class="fa fa-table" aria-hidden="true"></i><span> 当前计划</span></a></li>
-                    <li class="nav-item dropdown">
-                        <a href="#" id="pagesDropdown" role="button"
-                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <li class="nav-link">
+                        <a href="#">
                             <i class="fa fa-folder" aria-hidden="true" style=""></i>
-                            <span>历史数据  </span>
-                            <span class="icon"></span>
+                            <span>历史数据</span>
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
                         </a>
-                        <div class="dropdown-menu history" aria-labelledby="pagesDropdown" x-placement="bottom-start">
-                            <a class="dropdown-item" href="#">生产计划与实际查询</a>
-                            <a class="dropdown-item" href="#">生产效率分析</a>
-                            <a class="dropdown-item" href="#">品质分析</a>
-                        </div>
+                        <ul class="navChild">
+                            <li><a href="#" class="innerActive">生产计划与实际查询</a></li>
+                            <li><a href="#">生产效率分析</a></li>
+                            <li><a href="#">品质分析</a></li>
+                        </ul>
                     </li>
                 </ul>
             </div>
@@ -166,10 +189,10 @@
         </div>
     </div>
 </div>
-<script  src="js/jquery.slim.js"></script>
-<script src="js/jquery.dataTables.js"></script>
-<script src="js/popper.js"></script>
-<script src="js/bootstrap.js"></script>
-<script src="js/orderConfirm.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.dataTables.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/orderConfirm.js"></script>
 </body>
 </html>

@@ -10,7 +10,7 @@
     <title>数据中心</title>
     <link href="Css/bootstrap.css" rel="stylesheet" />
     <link href="Css/dataTables.css" rel="stylesheet" />
-    <link href="Css/font-awesome.css" rel="stylesheet" />
+    <link href="font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet" />
     <link href="Css/orderConfirm.css" rel="stylesheet" />
 </head>
 <body>
@@ -189,7 +189,7 @@
         </div>
     </div>
 </div>
-    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-3.4.1.js"></script>
     <script src="js/jquery.dataTables.js"></script>
     <script src="js/popper.js"></script>
     <script src="js/bootstrap.js"></script>

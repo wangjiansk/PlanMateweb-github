@@ -1,0 +1,29 @@
+﻿
+    <!DOCTYPE html>
+<script type="text/javascript">
+    var pb_strConfirmCloseMessage;
+    var pb_blnCloseWindow = false;
+    pb_strConfirmCloseMessage = "确实要离开该页面吗?您的文章内容还没有进行保存！按“确定”继续，或按“取消”留在当前页面。";
+    function ConfirmClose() {
+        window.event.returnValue = pb_strConfirmCloseMessage;
+        pb_blnCloseWindow = true;
+    }
+    function ShowConfirmClose(blnValue) {
+        if (blnValue) {
+            document.body.onbeforeunload = ConfirmClose;
+        } else {
+            document.body.onbeforeunload = null;
+        }
+    }
+</script>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body onload="ShowConfirmClose(true)">
+    <a href="http://www.baidu.com">换页面</a>
+</body>
+</html>

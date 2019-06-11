@@ -10,7 +10,7 @@
     <title>用户设置</title>
     <link rel="stylesheet" href="Css/bootstrap3.3.7.css">
     <link rel="stylesheet" href="Css/useSet.css">
-    <link href="font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet" />
+    <link href="Css/font-awesome.css" rel="stylesheet" />
 
 </head>
 <body>

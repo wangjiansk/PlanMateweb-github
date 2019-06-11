@@ -80,10 +80,11 @@
     <Content Include="font-awesome-4.7.0\css\font-awesome.min.css" />
     <Content Include="font-awesome-4.7.0\fonts\fontawesome-webfont.svg" />
     <Content Include="font-awesome-4.7.0\HELP-US-OUT.txt" />
+    <Content Include="HtmlPage1.html" />
     <Content Include="js\jquery.slim.js" />
     <Content Include="js\orderConfirm.js" />
     <Content Include="js\popper.js" />
-    <Content Include="orderConfirm.aspx" />
+    <Content Include="datacenter.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Image\favicon.ico" />
     <Content Include="Image\logo-white.png" />
@@ -146,12 +147,12 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="orderConfirm.aspx.cs">
-      <DependentUpon>orderConfirm.aspx</DependentUpon>
+    <Compile Include="datacenter.aspx.cs">
+      <DependentUpon>datacenter.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="orderConfirm.aspx.designer.cs">
-      <DependentUpon>orderConfirm.aspx</DependentUpon>
+    <Compile Include="datacenter.aspx.designer.cs">
+      <DependentUpon>datacenter.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

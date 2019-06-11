@@ -10,6 +10,6 @@
 namespace PlanMateweb {
     
     
-    public partial class orderConfirm {
+    public partial class datacenter {
     }
 }

@@ -72,6 +72,7 @@
     <Content Include="Css\bootstrap3.3.7.css" />
     <Content Include="Css\bootstrap.css" />
     <Content Include="Css\dataTables.css" />
+    <Content Include="Css\plan.css" />
     <Content Include="Css\orderConfirm.css" />
     <Content Include="Css\login.css" />
     <Content Include="Css\selector.css" />
@@ -81,8 +82,11 @@
     <Content Include="font-awesome-4.7.0\fonts\fontawesome-webfont.svg" />
     <Content Include="font-awesome-4.7.0\HELP-US-OUT.txt" />
     <Content Include="js\jquery.slim.js" />
+    <Content Include="js\plan.js" />
     <Content Include="js\orderConfirm.js" />
     <Content Include="js\popper.js" />
+    <Content Include="orderConfirm.css" />
+    <Content Include="plan.aspx" />
     <Content Include="orderConfirm.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Image\favicon.ico" />
@@ -146,6 +150,13 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="plan.aspx.cs">
+      <DependentUpon>plan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="plan.aspx.designer.cs">
+      <DependentUpon>plan.aspx</DependentUpon>
+    </Compile>
     <Compile Include="orderConfirm.aspx.cs">
       <DependentUpon>orderConfirm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

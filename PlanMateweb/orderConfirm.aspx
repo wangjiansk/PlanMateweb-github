@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="datacenter.aspx.cs" Inherits="PlanMateweb.datacenter" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="orderConfirm.aspx.cs" Inherits="PlanMateweb.orderConfirm" %>
 
 <!doctype html>
 <html>
@@ -13,7 +13,7 @@
     <link href="font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet" />
     <link href="Css/orderConfirm.css" rel="stylesheet" />
 </head>
-<body runat="server">
+<body>
 <div class="wrapper">
     <div class="top container-fluid">
         <div class="title">
@@ -53,7 +53,7 @@
 
                     <!-- 模态框底部 -->
                     <div class="modal-footer">
-                        <button runat="server" type="button" class="btn btn-secondary" data-dismiss="modal">退出登陆</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">退出登陆</button>
                     </div>
 
                 </div>

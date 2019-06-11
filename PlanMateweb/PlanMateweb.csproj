@@ -73,6 +73,7 @@
     <Content Include="Css\bootstrap.css" />
     <Content Include="Css\dataTables.css" />
     <Content Include="Css\orderConfirm.css" />
+    <Content Include="Css\font-awesome.css" />
     <Content Include="Css\login.css" />
     <Content Include="Css\selector.css" />
     <Content Include="Css\useSet.css" />
@@ -80,11 +81,10 @@
     <Content Include="font-awesome-4.7.0\css\font-awesome.min.css" />
     <Content Include="font-awesome-4.7.0\fonts\fontawesome-webfont.svg" />
     <Content Include="font-awesome-4.7.0\HELP-US-OUT.txt" />
-    <Content Include="HtmlPage1.html" />
     <Content Include="js\jquery.slim.js" />
     <Content Include="js\orderConfirm.js" />
     <Content Include="js\popper.js" />
-    <Content Include="datacenter.aspx" />
+    <Content Include="orderConfirm.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Image\favicon.ico" />
     <Content Include="Image\logo-white.png" />
@@ -93,7 +93,7 @@
     <Content Include="index.aspx" />
     <Content Include="js\bootstrap.js" />
     <Content Include="js\index.js" />
-    <Content Include="js\jquery-3.4.1.js" />
+    <Content Include="js\jquery-3.3.1.min.js" />
     <Content Include="js\selector.js" />
     <Content Include="js\super.js" />
     <Content Include="js\tool.js" />
@@ -147,12 +147,12 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="datacenter.aspx.cs">
-      <DependentUpon>datacenter.aspx</DependentUpon>
+    <Compile Include="orderConfirm.aspx.cs">
+      <DependentUpon>orderConfirm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="datacenter.aspx.designer.cs">
-      <DependentUpon>datacenter.aspx</DependentUpon>
+    <Compile Include="orderConfirm.aspx.designer.cs">
+      <DependentUpon>orderConfirm.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

@@ -50,7 +50,8 @@
                                 <label for="#usercheck" style="word-break: keep-all;white-space: nowrap;font-size: .5em;">管理员登陆</label>             
                             </div>
                                          
-                            <div id="LoginMsg" runat="server"  class="col-7 text-danger" style="right:.2em; position:absolute;font-size:.5em;font-weight:500">                                
+                            <div id="LoginMsg" runat="server"  class="col-7 text-danger" style="right:.2em; position:absolute;font-size:.5em;font-weight:500">
+                                
                             </div>
                         </div>
                         

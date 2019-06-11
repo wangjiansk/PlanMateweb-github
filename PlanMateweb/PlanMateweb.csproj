@@ -73,6 +73,7 @@
     <Content Include="Css\bootstrap.css" />
     <Content Include="Css\dataTables.css" />
     <Content Include="Css\orderConfirm.css" />
+    <Content Include="Css\font-awesome.css" />
     <Content Include="Css\login.css" />
     <Content Include="Css\selector.css" />
     <Content Include="Css\useSet.css" />
@@ -92,7 +93,7 @@
     <Content Include="index.aspx" />
     <Content Include="js\bootstrap.js" />
     <Content Include="js\index.js" />
-    <Content Include="js\jquery-3.4.1.js" />
+    <Content Include="js\jquery-3.3.1.min.js" />
     <Content Include="js\selector.js" />
     <Content Include="js\super.js" />
     <Content Include="js\tool.js" />
